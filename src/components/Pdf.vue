@@ -26,7 +26,7 @@ export default {
 
     const fetchPdfUrl = async () => {
       try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyoFGNx33d_6bI7WjbH7bvWcSwl-7KMSuFc3jKh7kllXRIg5esdurjrCsdUDTIg9Nbl/exec');
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxWj_8caBZ_nkxwyJtRgOfoFEwGuIZVe4ImeqJMDaxoPeZ_Rc6sGZOsEAJuYP0UVmDt/exec');
         const data = await response.json();
         pdfUrl.value = data.pdfUrl;
        
@@ -37,7 +37,7 @@ export default {
 
     const saveAsWord = async () => {
       try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbyoFGNx33d_6bI7WjbH7bvWcSwl-7KMSuFc3jKh7kllXRIg5esdurjrCsdUDTIg9Nbl/exec");
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxWj_8caBZ_nkxwyJtRgOfoFEwGuIZVe4ImeqJMDaxoPeZ_Rc6sGZOsEAJuYP0UVmDt/exec");
         const data = await response.json();
 
         if (response.ok) {
