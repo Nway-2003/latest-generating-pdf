@@ -56,6 +56,7 @@ Ensure you have the following installed:
 To run the application in development mode:
 ```sh
 npm run dev
+```
 
 ### Testing
 
