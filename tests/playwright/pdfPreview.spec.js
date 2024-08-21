@@ -24,7 +24,7 @@ test('should open the PDF preview', async ({ page }) => {
 
 test('should render the PDF preview with the correct URL', async ({ page }) => {
   // Mocking the API response for PDF URL
-  await page.route('https://script.google.com/macros/s/AKfycbyoFGNx33d_6bI7WjbH7bvWcSwl-7KMSuFc3jKh7kllXRIg5esdurjrCsdUDTIg9Nbl/exec', (route) => {
+  await page.route('https://script.google.com/macros/s/AKfycbzFO0QRHLtdrohRQQcA8MITTBE-88acRhVFs4xmLP4BS2nJF-1nuEZ7HsKGjd1JS69s/exec', (route) => {
       route.fulfill({
           status: 200,
           body: JSON.stringify({ pdfUrl: 'https://example.com/sample.pdf' }),
